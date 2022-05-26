@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+@model Slider
+<div class="col-md-3">
+    <form method="post" asp-action="Update" >
+        <input type="number" asp-for="Id" style="visibility:hidden;" />
+        <div class="mb-4">
+            <label for="Title1" class="form-label">Title 1</label>
+            <input asp-for="Title1" type="text" name="Title1" placeholder="Type here" class="form-control" id="Title1" />
+        </div>
+        <div class="mb-4">
+            <label for="Title2" class="form-label">Title 2</label>
+            <input type="text" asp-for="Title2" name="Title2" placeholder="Type here" class="form-control" id="Title2" />
+        </div>
+        <div class="mb-4">
+            <label for="Description" class="form-label">Description</label>
+            <input type="text" asp-for="Description" name="Description" placeholder="Type here" class="form-control" id="Description" />
+        </div>
+       
+        <div class="mb-4">
+            <label for="RedirectUrlText" class="form-label">Redirect Url Text</label>
+            <input asp-for="UrlText" type="text" name="RedirectUrlText" placeholder="Type here" class="form-control" id="RedirectUrlText" />
+        </div>
+        <div class="mb-4">
+            <label for="Image" class="form-label">Image</label>
+            <input asp-for="Image" type="text" name="Image" placeholder="Type here" class="form-control" id="Image" />
+        </div>
+        <div class="d-grid">
+            <button type="submit" id="Edit"  class="btn btn-primary">Edit</button>
+            <button id="Edit" class="btn btn-secondary d-none">Edit slider</button>
+        </div>
+    </form>
+</div>
+
